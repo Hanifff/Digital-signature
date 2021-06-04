@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Alice's end</title>
+    <script src="/static/alice.js"></script>
+</head>
+<body>
+
+<h1>Hello I am Alice!</h1>
+
+<div id="pk_div">
+    <p>Share my Public Key with Bob by clicking on the button!</p>
+    <input type="button" name="pk" value="Ask  for Bob's public key and send mine" id="pk" onClick="publicKeyExchange();"/>
+</div>
+
+<div id= "display_pk" style="display:none;">
+<p>Alright, Bob shared his key with you!<br>
+    It is: </p>
+    <span id="dis_pk"></span>
+</div>
+
+<div>
+    <span id="sent" style="color:red;"></span></br>
+</div>
+
+<div id="cipher_div" style="display:none;">
+    <p>Start your secret communication!</p>
+    <input type="button" name="cipher" value="Send a Signed Message to Bob" id="cipher" onClick="getMsg();"/>
+</div>
+
+
+<div>
+    <span id="comment" style="color:green;"></span></br>
+    <span id="msg" style="color:blue;"></span></br>
+</div>
+
+</body>
+</html>
